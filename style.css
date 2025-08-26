@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+
+
+/* utilities classes */
+.container {
+    width: 100%;
+    max-width: 1180px;
+    padding: 15px 20px 0;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.primaryBtn {
+    border: 1px solid #2294ED;
+    background-color: #fff;
+    color: #183B56;
+    font-weight: 400;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.primaryBtn:hover {
+    border-color: #0069b9;
+}
+
+.secondaryBtn {
+    border: 0;
+    outline: 0;
+    background-color: #2294ED;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+.secondaryBtn:hover {
+    background-color: #0064b1;
+    color: #fff;
+}
+
+
+/* banner section */
+.top-banner {
+    background-color: #E74694;
+    height: 45px;
+    line-height: 45px;
+    background-image: url("/assets/asset\ 18.png");
+    background-size: 300px;
+    margin-bottom: 10px;
+}
+
+.banner-text {
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* nav section */
+nav {
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 45px;
+}
+
+.nav-toggle {
+    background-color: white;
+    height: 400px;
+    max-width: 220px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 999;
+    padding: 40px 40px;
+    margin: auto;
+    display: none;
+    transition: all 1s ease;
+}
+
+.nav-toggle a {
+    padding: 12px 25px;
+    color: #183B56;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-toggle .pri-btn {
+    color: #183B56;
+    margin-block: 10px;
+    padding: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.nav-toggle .sec-btn {
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    gap: 40px;
+    cursor: pointer;
+}
+
+ul li a {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+}
+
+ul li a:hover {
+    color: #2294ED;
+}
+
+.nav-icon {
+    font-size: 20px;
+    display: none;
+}
+
+.xmark {
+    display: none;
+}
+
+/* header-section */
+.header {
+    margin-top: 40px;
+    gap: 50px;
+}
+
+.left-header h1 {
+    font-size: 48px;
+    color: #183B56;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.left-header p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #183B56;
+    margin-bottom: 20px;
+}
+
+.left-header .btn {
+    font-size: 18px;
+}
+
+.right-header img {
+    width: 550px;
+    position: relative;
+    z-index: -10;
+}
+
+/* companies-section */
+.companies-section {
+    margin-top: 30px;
+}
+
+.com-text {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #183B56;
+}
+
+.com-logo {
+    gap: 32px;
+    justify-content: center;
+}
+
+.com-logo img {
+    height: 50px;
+    object-fit: cover;
+}
+
+/* feature-section */
+.features-section {
+    margin-block: 100px;
+    background-image: url("/assets/asset\ 19.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+
+}
+
+.features-section .fea-text {
+    text-align: center;
+    color: #183B56;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.features-section .fea-btn {
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.icon {
+    color: #2294ED;
+    margin-left: 4px;
+}
+
+/* features-card */
+.features-card-sec {
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.features-card {
+    text-align: center;
+    width: 300px;
+
+}
+
+.features-card img {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.features-card h3 {
+    color: #183B56;
+    margin-block: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.features-card p {
+    color: #183B56;
+    margin-bottom: 10px;
+}
+
+/* big-fea-sec-1 */
+.big-features {
+    gap: 100px;
+    padding: 10px 70px;
+}
+
+.fea-img img {
+    width: 500px;
+}
+
+.big-fea-content {
+    flex-direction: column;
+}
+
+.big-features-text h3 {
+    color: #183B56;
+    margin-block: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.right-panel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.right-img {
+    margin-block: 20px;
+}
+
+.right-img img {
+    width: 110px;
+}
+
+.left-big-fea>p {
+    padding-left: 30px;
+    margin-block: 20px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.right-panel-img img {
+    width: 56px;
+}
+
+.right-panel-text {
+    color: #183B56;
+}
+
+/* examples-section */
+.examples-section {
+    margin-top: 80px;
+}
+
+.examples-text {
+    flex-direction: column;
+    margin: auto;
+    gap: 15px;
+}
+
+.examples-text h2 {
+    color: #183B56;
+}
+
+.examples-area {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-block: 30px;
+    padding: 10px;
+}
+
+.examples-card {
+    height: 300px;
+    width: 230px;
+    background: linear-gradient(rgba(12, 12, 12, 0.5), rgba(23, 22, 23, 0.3)), url("https://usability-hub-design.netlify.app/assets/examples2.jpeg");
+    background-size: cover;
+    position: relative;
+}
+
+.examples-card-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.examples-card:nth-child(2) {
+    background: linear-gradient(rgba(12, 12, 12, 0.5), rgba(23, 22, 23, 0.3)), url("https://usability-hub-design.netlify.app/assets/examples1.jpeg");
+    background-size: cover;
+}
+
+.examples-card:nth-child(3) {
+    background: linear-gradient(rgba(12, 12, 12, 0.5), rgba(23, 22, 23, 0.3)), url("https://usability-hub-design.netlify.app/assets/examples3.jpeg");
+    background-size: cover;
+}
+
+.examples-card:nth-child(4) {
+    background: linear-gradient(rgba(12, 12, 12, 0.5), rgba(23, 22, 23, 0.3)), url("https://usability-hub-design.netlify.app/assets/examples4.jpeg");
+    background-size: cover;
+}
+
+.examples-card:hover {
+    box-shadow: 2px 2px 8px black;
+}
+
+/* try-section-panel */
+.try-section-panel {
+    width: 100%;
+    background-color: #183B56;
+    padding: 10px 30px;
+    margin: auto;
+}
+
+.try-panel {
+    padding-inline: 60px;
+}
+
+.left-try-panel {
+    position: relative;
+}
+
+.try-panel-img img {
+    object-fit: cover;
+    height: 500px;
+}
+
+.try-sec-img img {
+    position: absolute;
+    top: 145px;
+    left: 145px;
+    height: 210px;
+}
+
+.left-try-panel-text {
+    position: absolute;
+    top: 42%;
+    left: 38%;
+    color: #183B56;
+}
+
+.try-panel-list {
+    gap: 40px;
+    color: #b9cde4;
+    margin-block: 20px;
+    margin-left: 10px;
+}
+
+.try-panel-list ul li {
+    list-style-type: disc;
+    font-size: 13px;
+}
+
+.right-try-panel>h1,
+h2 {
+    color: #fff;
+}
+
+.right-try-panel .right-panel-text {
+    color: #b9cde4;
+    margin-block: 20px;
+}
+
+.try-panel-btn {
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.try-panel-btn p,
+.try-btn {
+    color: #b9cde4;
+    background-color: #183B56;
+}
+
+/* st-panel */
+.st-panel {
+    margin-top: 180px;
+}
+
+.st-panel-text {
+    justify-content: center;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.st-panel-text p,
+h2 {
+    color: #183B56;
+}
+
+/* TRY SECONDARY IMAGE INSIDE LEFT PANEL */
+.try-sec-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.try-sec-img img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* footer-section */
+footer {
+    background-color: #EBF2FA;
+    margin-top: 40px;
+    padding: 60px 20px 10px;
+}
+
+.footer-section {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.gird-layout-footer {
+    display: flex;
+    gap: 80px;
+    line-height: 45px;
+    color: #183B56;
+    padding-right: 40px;
+}
+
+.gird-layout-footer ul li a {
+    font-size: 16px;
+    color: #183B56;
+}
+
+.gird-layout-footer ul li a:hover {
+    color: #2294ED;
+}
+
+/* sub-footer */
+.sub-footer {
+    background-color: #B9CDE4;
+    height: 70px;
+    padding: 5px 20px;
+}
+
+.sub-foot-container {
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-footer-text ul li a {
+    color: #183B56;
+    font-size: 12px;
+}
+
+.social-media {
+    gap: 30px;
+    font-size: 22px;
+    color: #183B56;
+}
